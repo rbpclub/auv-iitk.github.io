@@ -1,15 +1,13 @@
 # Site settings
-title: AUV-IITK
-email: iitkauv@gmail.com
-copyright_name: AUV-IITK
-github_username: AUV-IITK
+title: Raleigh Bike Polo
+email: willy@raleighbikepolo.club
+copyright_name: Raleigh Bike Polo
+github_username: rbpclub
 
 collections:
-  vehicles :
+  info:
   teams:
-  subteam :
-  competition :
-  research :
+  tournaments:
   people:
 
 # used to estimate reading time

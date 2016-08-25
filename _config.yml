@@ -5,9 +5,8 @@ copyright_name: Raleigh Bike Polo
 github_username: rbpclub
 
 collections:
+  blog:
   teams:
-  tournaments:
-  people:
 
 # used to estimate reading time
 wpm: 150

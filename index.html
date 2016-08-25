@@ -24,25 +24,11 @@ We typically practice three times a week (these events update every week, so joi
                     <span class="image"><img src="images/floating.jpg" alt="floating" /></span>
                 </div>
             </section>
-            <section id="subteams" class="main special">
-                <header class="major">
-                    <h2>Sub Teams</h2>
-                </header>
-                <ul class="features">
-                    {% for item in site.subteam %}
-                    <li>
-                        <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span>
-                        <h3>{{ item.title }}</h3>
-                        <p>{{ item.description }}</p>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
             <section id="second" class="main special">
                 <header class="major">
-                    <h2>Recent Milestones</h2>
+                    <h2>Tournaments</h2>
                 </header>
-                {% for post in site.tags["milestone"] %}
+                {% for post in site.tags["tournament"] %}
                 <a href="{{ post.url | prepend: site.baseurl }}">
                 <p>
                 <b>{{ post.title }}</b>
@@ -50,32 +36,5 @@ We typically practice three times a week (these events update every week, so joi
                 </p>
                 </a>
                 {% endfor %}
-            </section>
-            <section id="third" class="main special">
-                <header class="major">
-                    <h2>AUV Competitions</h2>
-                </header>
-                    {% for item in site.competition %}
-                    <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    <a href="{{ item.link }}"><i>Read more...</i></a>
-                    </p>
-                    <br>
-                    {% endfor %}
-            </section>
-            <section id="fourth" class="main special">
-                <header class="major">
-                    <h2>Research Collaborations</h2>
-                </header>
-                    {% for item in site.research %}
-                    <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    </p>
-                    <br>
-                    {% endfor %}
             </section>
         </div>
